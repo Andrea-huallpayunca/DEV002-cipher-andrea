@@ -23,8 +23,6 @@ document.getElementById('mostrar').onclick = function(){
 
     // eslint-disable-next-line no-cond-assign, no-constant-condition
     if ( passwordInput.type=='password') {
-      //  document.getElementById('mostrar').textContent = 'Ocultar';
-       // passwordInput.type='text';
         document.getElementById('mostrar').textContent = 'Ocultar';
         passwordInput.type='number';
     }  else {
@@ -42,4 +40,3 @@ document.getElementById('decodificar').onclick= function () {
     document.getElementById('mensajeResultante').value =
     cipher.decode(document.getElementById('desplazar').value,document.getElementById('mensaje').value);
 }
-// console.log(cipher);

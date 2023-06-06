@@ -14,7 +14,6 @@ const cipher = {
 
         resultado += letras[nuevaPosicion];
         } else {
-          console.log(mensaje[index])
           resultado += mensaje[index]
         }
 
@@ -39,7 +38,7 @@ const cipher = {
         
           resultado += letras[nuevaPosicion];
         } else {
-          resultado += " "
+          resultado += mensaje[index]
         }
         
       }
