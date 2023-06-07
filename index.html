@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>La quokka anónima</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <div id="root">
+      <h1>Hello world!</h1>
+    </div> -->
+    <header>
+      <div id="root" class="encabezado">
+        <h1>LA QUOKKA ANÓNIMA</h1>
+      </div>
+    </header>
+    <main>      
+          
+      <div  class="botones"  >
+        <div class="buttons">
+          <button class= "boton1" type="button" id="codificar"> Codificar</button>  
+          <button class="boton2" type="button" id="decodificar"> Decodificar</button>
+        </div>
+      </div>  
+      
+      <div  class="mensajes">
+        <div  class="mensaje1">
+     <!--<h2>MENSAJE</h2> / --> 
+          <textarea  class= "texto" type="password" id="mensaje" 
+          placeholder="¿Tienes algún mensaje que quieras poner en clave? 
+          Escríbelo aquí ☺" ></textarea> 
+        </div> 
+        <!-- <br> -->
+        <div class ='div-Clave'>
+          <div class="clave">
+            <h3 >¿Cuál es tu clave?</h3>
+          </div>
+          <div class="resp">
+            <input class="numero" type="password" id="desplazar" placeholder="Inserta un número" min="1" />
+            <button id="mostrar" class="mostrar"  >Mostrar</button> 
+          </div>
+        </div>
+
+        <div  class="mensaje2">
+     <!--<h2>MENSAJE RESULTANTE</h2>--> 
+          <textarea type="text" id="mensajeResultante" placeholder="Este es tu mensaje secreto..."></textarea> 
+        </div>
+      </div> 
+
+    </main>
+    <footer>
+      <p class="copy"> © 2022 Andrea Huallpayunca </p>
+    </footer>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
