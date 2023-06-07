@@ -112,7 +112,7 @@
     height: 70%;
     width: 70%;
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     left: -10%;
     display: flex;
  }
@@ -204,14 +204,24 @@
   }   
 
 
+footer{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background-color: rgba(250, 235, 215, 0.692);
+    font-family: 'Ubuntu';
+    font-size: 0.7rem;
 
+}
+.copy{
+    padding: 5px;
+}
 
 /* Desktop */
 
 @media (min-width:500px){
-*{
-    font-size: 1rem;
-}
 }
 
 @media ( min-width:900px){
@@ -269,6 +279,5 @@ div.botones{
 .boton1,.boton2, .mostrar{
     padding: 25px;
     margin-left: -10px;
-    /* width: 50%; */
 }
 }
