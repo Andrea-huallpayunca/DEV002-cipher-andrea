@@ -347,12 +347,8 @@ textarea{
     }
     }
 
-/* @media only screen and (min-width:1000px) and(max-width:610px){
-        .mensajes{
-            right: 15%;
-        }
-.div-Clave{
-    right: 60%;
-    margin-right: 10%;
-}
-    } */
+@media only screen and (min-width:1000px) {
+ .buttons{
+    left:-25px
+ }
+    }
