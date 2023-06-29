@@ -31,15 +31,16 @@ header{
     height: 10%;
     top: 0;
 }
+
 .encabezado{
     background-image: url(./img/titulo.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
-    top: -10px;
+    top: -5px;
     min-width: 90%;
-    min-height: 70%;
+    min-height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,8 +52,8 @@ header{
     letter-spacing: 4px;
     word-spacing: 6px;
     color: #634014f3;
-    font-size: 2.5rem;
-    margin-top: 33px;
+    font-size: 1rem;
+    margin-top: 26px;
 
  }
  /* --- */
@@ -143,32 +144,30 @@ header{
  .buttons{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     position: absolute;
-    bottom: 260px;
+    bottom: 30px;
     width: 100%;
-    height: 240px;
+    min-height: 180px;
  }
  .boton1,.boton2{
-    font-size: 30px;
-    width: 35%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-left: 30px;
-  
+    font-size: 1rem;
+    min-width: 35%;
+    padding: 0.7rem;
+    margin-left: 10px;
  }
  
  
  div.mensajes{
     position: absolute;
-    top: 300px;
+    bottom: 310px;
     height: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     right: 20px;
-    width: 500px;
+    max-width: 50%;
  }
  .mensaje1,.mensaje2{
     height: 400px;
@@ -191,7 +190,7 @@ header{
     resize: none;
     padding: 7%;
     border: none;
-    font-size: 40px;
+    font-size: 0.7rem;
    
  }
  .mensaje1{
@@ -224,3 +223,10 @@ footer{
 .copy{
     padding: 5px;
 }
+
+/* @media (min-width:500px){
+    .encabezado{
+        min-height: 110%;
+    }
+
+}  */
