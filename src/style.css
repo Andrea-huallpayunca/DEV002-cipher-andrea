@@ -1,36 +1,10 @@
 *{
-    margin: 0;
+    margin:0;
     padding:0
 }
-/* Movil */
 
- body{
-    background-image: url(./img/fondo.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    width: 100vw;
- }
- header{
-    display: flex;
-    justify-content: center;
- }
- div.encabezado{
-    background-image: url(./img/titulo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    top: -10px;
-    width: 95%;
-    height: 13%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
- }
- 
- @font-face {
+/* Fuentes texto */
+@font-face {
    font-family: 'Carter';
    src: url('./fonts/CarterOne-Regular.ttf');
  }
@@ -38,36 +12,69 @@
    font-family: 'Ubuntu';
    src: url('./fonts/Ubuntu-Regular.ttf');
  }
+
+ /* --Encabezado-- */
+body{
+    background-image:url(./img/fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    top: 0;
+}
+
+.encabezado{
+    background-image: url(./img/titulo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: -5px;
+    min-width: 90%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
  h1{
- 
     font-family: 'Carter';
     letter-spacing: 4px;
     word-spacing: 6px;
     color: #634014f3;
-    font-size: 60px;
-    
-    margin-bottom: -60px;
+    font-size: 1rem;
+    margin-top: 26px;
 
  }
- 
+ /* --clave- */
  .div-Clave{
-    width: 500px;
-    height: 490px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
  }
  div.clave {
     background-image: url(./img/globito.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 90%;
-    height: 60%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    min-width: 100%;
+    min-height: 60%;
+    
  }
  
  
@@ -75,8 +82,7 @@
     text-align: center;
     font-family: 'Ubuntu';
     color: rgb(59, 59, 59);
-    font-size: 40px;
-    margin-top: -40px;
+    margin-top: -10px;
     width: 50%;
  
  }
@@ -86,22 +92,20 @@
     align-items: center;
     width: 100%;
  }
- input.numero{
+ .numero{
     text-align: center;
     width: 50%;
     font-family: 'Ubuntu';
     border: none;
-    font-size: 30px;
     border-radius: 20%;
-    padding: 10px;
+    padding: 1rem;
+    font-size: 0.6rem;
  }
  
  .mostrar{
     text-align: center;
     width: 50%;
-    font-size: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding:1rem
  }
  
  div.botones{
@@ -137,36 +141,33 @@
  .buttons{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     position: absolute;
-    bottom: 260px;
+    bottom: 30px;
     width: 100%;
-    height: 240px;
+    min-height: 180px;
  }
  .boton1,.boton2{
-    font-size: 30px;
-    width: 35%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-left: 30px;
-  
+    font-size: 1rem;
+    min-width: 35%;
+    padding: 0.7rem;
+    margin-left: 10px;
  }
  
  
  div.mensajes{
     position: absolute;
-    top: 300px;
+    bottom: 70px;
     height: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    right: 20px;
-    width: 500px;
+    right: 5%;
+    width: 50%;
  }
  .mensaje1,.mensaje2{
-    height: 400px;
-
+    height: 30%;
     border-radius: 25%;
     background-color: #e1f8eab4;
     border: none;
@@ -185,7 +186,7 @@
     resize: none;
     padding: 7%;
     border: none;
-    font-size: 40px;
+    font-size: 0.8rem;
    
  }
  .mensaje1{
@@ -219,65 +220,139 @@ footer{
     padding: 5px;
 }
 
-/* Desktop */
-
-/* @media (min-width:500px){
-} */
-
-@media ( min-width:900px){
-div.encabezado{
-    width: 56%;
-    height: 19%;
-    padding: 2%;
-    display: flex;
-    justify-content: center;
-    }
-
+@media (min-width:419px){
+header{
+    height: 15%;
+}
 h1{
-font-size: 2rem;
-}
-
-div.mensajes{
-    max-height: 700px;
-    top: 20vh;
-    width: 600px;
-    margin-right: 50px;
-}
-.mensaje1,.mensaje2{
-    max-height: 200px;
-    min-width: 300px;
-    max-width: 400px;
-    margin-inline-start: auto;
-    z-index: 2;
-
-}
-textarea, h3,.mostrar{
-    font-size: 1.1rem;
-}
-.boton1,.boton2,.mostrar, input.numero{
-    max-width: 180px;
-    font-size: 0.9rem;
-}
-.mostrar{
-    margin-top: 10px;
-}
-.div-Clave{
-    position: absolute;
-    max-height: 250px;
-    max-width: 250px;
-    top: 90px;
-}
-div.botones{
-    left: 14%;
-    max-width: 24%;
+    font-size: 1.3rem;
+    margin-top: 36px;
 }
 .buttons{
-    bottom: 60px;
-    max-height: 120px;
+    left:-30px
+}
 
+} 
+
+@media (min-width:500px){
+    header{
+        height: 15%;
+    }
+    h1{
+        font-size: 1.5rem;
+        margin-top: 36px;
+    }
+    .buttons{
+        left:-50px
+    }
+    .boton1{
+        margin-bottom: 30px;
+    }
+    } 
+@media(min-width:700px){
+h1{
+    font-size: 2rem;
 }
-.boton1,.boton2, .mostrar{
-    padding: 25px;
-    margin-left: -10px;
+.clave{
+    min-width: 90%;
+}
+h3{
+    width: 30%;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+textarea{
+    font-size: 1.3rem;
+}
+.boton1,.boton2{
+    font-size: 1.3rem;
+    min-width: 35%;
+    padding: 1rem;
+    margin-left: 10px;
+
+} 
+.buttons {
+    left: -70px;
+    bottom:6rem
+}
+.numero{
+    font-size: 1rem;
+}
+.mostrar{
+    font-size:0.8rem
 }
 }
+
+@media ( min-width:900px){
+    div.encabezado{
+        width: 56%;
+        height: 19%;
+        padding: 2%;
+        display: flex;
+        justify-content: center;
+        }
+    
+    h1{
+    font-size: 2rem;
+    }
+    
+    div.mensajes{
+        max-height: 700px;
+        top: 20vh;
+        width: 60%;
+        margin-right: 50px;
+    }
+    .mensaje1,.mensaje2{
+        height: 35%;
+        min-width: 300px;
+        max-width: 400px;
+        margin-inline-start: auto;
+        z-index: 2;
+    
+    }
+    textarea, h3,.mostrar{
+        font-size: 1.1rem;
+    }
+    .boton1,.boton2,.mostrar, input.numero{
+        /* max-width: 180px; */
+        font-size: 0.9rem;
+    }
+    .mostrar{
+        margin-top: 10px;
+    }
+    .div-Clave{
+        position: absolute;
+        max-height: 250px;
+        max-width: 250px;
+        top: 90px;
+        right: 50%;
+    }
+    div.botones{
+        left: 14%;
+        max-width: 24%;
+        justify-content: center;
+    }
+    .buttons{
+        bottom: 2rem;
+        /* max-height: 120px; */
+        left: 0px;
+    
+    }
+    .boton1{
+        margin-bottom:0px;
+    }
+    .boton1,.boton2, .mostrar{
+        /* padding: 25px; */
+        margin-left: -10px;
+    }
+    }
+
+/* @media only screen and (min-width:1000px) and(max-width:610px){
+        .mensajes{
+            right: 15%;
+        }
+.div-Clave{
+    right: 60%;
+    margin-right: 10%;
+}
+    } */
