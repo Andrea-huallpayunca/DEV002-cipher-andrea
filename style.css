@@ -200,8 +200,9 @@ header{
  
  }
  
- button:focus {
+ button:hover {
    background   : rgba(95, 116, 63, 0.63);
+   font-size: 110%;
   }   
 
 
